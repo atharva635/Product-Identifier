@@ -412,6 +412,17 @@ def run_training(epochs: int = Form(3), background_tasks: BackgroundTasks = Back
     background_tasks.add_task(train_and_index_worker, epochs)
     return {"status": "success", "message": f"Training initiated for {epochs} epochs in the background."}
 
-# Mount frontend files
-if os.path.exists("frontend"):
-    app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+# Serve frontend files from root
+from fastapi.responses import FileResponse
+
+@app.get("/")
+def read_root():
+    return FileResponse("index.html")
+
+@app.get("/styles.css")
+def read_style():
+    return FileResponse("styles.css")
+
+@app.get("/app.js")
+def read_js():
+    return FileResponse("app.js")

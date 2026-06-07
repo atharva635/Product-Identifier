@@ -31,11 +31,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Create build folder
+        run: |
+          mkdir build
+          cp index.html styles.css app.js build/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload only the frontend folder where HTML/CSS/JS files reside
-          path: './frontend'
+          path: './build'
 
       - name: Deploy to GitHub Pages
         id: deployment
