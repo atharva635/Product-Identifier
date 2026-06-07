@@ -1,0 +1,450 @@
+[
+    {
+        "id": "prod_001",
+        "title": "Nike Air Zoom Running Shoes",
+        "brand": "Nike",
+        "category": "Footwear",
+        "price": 8999,
+        "color": "red",
+        "description": "High-performance red athletic sneakers featuring responsive cushioning, breathable mesh upper, and durable rubber outsoles. Perfect for marathons, gym workouts, and jogging.",
+        "tags": [
+            "running",
+            "sport",
+            "cushioning",
+            "marathon",
+            "gym",
+            "lightweight"
+        ],
+        "image_path": "data\\images\\prod_001.jpg"
+    },
+    {
+        "id": "prod_002",
+        "title": "Puma Classic Street Sneakers",
+        "brand": "Puma",
+        "category": "Footwear",
+        "price": 4999,
+        "color": "black",
+        "description": "Classic black leather lifestyle sneakers with soft cushioned sockliner and retro vulcanized rubber sole. Elegant and durable daily footwear.",
+        "tags": [
+            "casual",
+            "retro",
+            "leather",
+            "daily",
+            "lifestyle"
+        ],
+        "image_path": "data\\images\\prod_002.jpg"
+    },
+    {
+        "id": "prod_003",
+        "title": "Adidas Ultraboost Training Shoes",
+        "brand": "Adidas",
+        "category": "Footwear",
+        "price": 12999,
+        "color": "blue",
+        "description": "Premium blue lightweight training shoes with energy-returning boost midsole and Primeknit upper. Provides exceptional comfort and grip for heavy workout sessions.",
+        "tags": [
+            "training",
+            "boost",
+            "comfort",
+            "gym",
+            "workout",
+            "lightweight"
+        ],
+        "image_path": "data\\images\\prod_003.jpg"
+    },
+    {
+        "id": "prod_004",
+        "title": "Timberland Heritage Leather Boots",
+        "brand": "Timberland",
+        "category": "Footwear",
+        "price": 14999,
+        "color": "brown",
+        "description": "Heavy-duty waterproof brown leather boots with seam-sealed construction, rustproof hardware, and rubber lug outsoles for superior outdoor traction.",
+        "tags": [
+            "boots",
+            "waterproof",
+            "leather",
+            "outdoor",
+            "traction",
+            "hiking"
+        ],
+        "image_path": "data\\images\\prod_004.jpg"
+    },
+    {
+        "id": "prod_005",
+        "title": "Dr. Martens Classic 1460 Combat Boots",
+        "brand": "Dr. Martens",
+        "category": "Footwear",
+        "price": 11999,
+        "color": "black",
+        "description": "Iconic 8-eye black leather combat boots with yellow welt stitching and air-cushioned slip-resistant sole. Extremely robust and retro.",
+        "tags": [
+            "boots",
+            "combat",
+            "leather",
+            "retro",
+            "classic",
+            "grunge"
+        ],
+        "image_path": "data\\images\\prod_005.jpg"
+    },
+    {
+        "id": "prod_006",
+        "title": "Birkenstock Arizona Two-Strap Sandals",
+        "brand": "Birkenstock",
+        "category": "Footwear",
+        "price": 6999,
+        "color": "brown",
+        "description": "Classic brown suede double-strap sandals with adjustable metal buckles and contoured cork-latex footbed that conforms to the shape of your foot.",
+        "tags": [
+            "sandals",
+            "cork",
+            "casual",
+            "summer",
+            "comfort"
+        ],
+        "image_path": "data\\images\\prod_006.jpg"
+    },
+    {
+        "id": "prod_007",
+        "title": "Adidas Adilette Sport Slides",
+        "brand": "Adidas",
+        "category": "Footwear",
+        "price": 2499,
+        "color": "black",
+        "description": "Comfortable black slide sandals with quick-dry bandage upper, signature 3-stripes, and contoured footbed for indoor and pool-side usage.",
+        "tags": [
+            "sandals",
+            "slides",
+            "pool",
+            "dry",
+            "sport",
+            "casual"
+        ],
+        "image_path": "data\\images\\prod_007.jpg"
+    },
+    {
+        "id": "prod_008",
+        "title": "Chanel Classic Caviar Handbag",
+        "brand": "Chanel",
+        "category": "Fashion",
+        "price": 85000,
+        "color": "red",
+        "description": "Stunning red luxury handbag crafted with quilted caviar leather, gold-tone chain link shoulder strap, and iconic CC turn-lock closure.",
+        "tags": [
+            "handbag",
+            "luxury",
+            "leather",
+            "quilted",
+            "gold",
+            "premium"
+        ],
+        "image_path": "data\\images\\prod_008.jpg"
+    },
+    {
+        "id": "prod_009",
+        "title": "Gucci Marmont Shoulder Bag",
+        "brand": "Gucci",
+        "category": "Fashion",
+        "price": 74999,
+        "color": "brown",
+        "description": "Elegant brown leather shoulder bag featuring chevron design quilting, interlocking antique gold-tone GG hardware, and zip top closure.",
+        "tags": [
+            "handbag",
+            "luxury",
+            "leather",
+            "quilted",
+            "gold",
+            "designer"
+        ],
+        "image_path": "data\\images\\prod_009.jpg"
+    },
+    {
+        "id": "prod_010",
+        "title": "Herschel Heritage Travel Backpack",
+        "brand": "Herschel",
+        "category": "Fashion",
+        "price": 5499,
+        "color": "brown",
+        "description": "Classic brown canvas travel backpack with signature striped fabric liner, 15-inch laptop sleeve, front pocket, and synthetic leather details.",
+        "tags": [
+            "backpack",
+            "canvas",
+            "travel",
+            "laptop",
+            "campus",
+            "vintage"
+        ],
+        "image_path": "data\\images\\prod_010.jpg"
+    },
+    {
+        "id": "prod_011",
+        "title": "North Face Urban Explorer Backpack",
+        "brand": "North Face",
+        "category": "Fashion",
+        "price": 6999,
+        "color": "black",
+        "description": "Water-resistant black tactical commuter backpack with compression straps, mesh side pockets, ergonomic shoulder straps, and modular laptop compartment.",
+        "tags": [
+            "backpack",
+            "tactical",
+            "waterproof",
+            "laptop",
+            "commute",
+            "outdoor"
+        ],
+        "image_path": "data\\images\\prod_011.jpg"
+    },
+    {
+        "id": "prod_012",
+        "title": "Schott NYC Premium Leather Jacket",
+        "brand": "Schott NYC",
+        "category": "Fashion",
+        "price": 29999,
+        "color": "black",
+        "description": "Heavyweight black steerhide leather motorcycle jacket with asymmetrical front zipper, snap-down collar, three zippered pockets, and belt detail.",
+        "tags": [
+            "jacket",
+            "leather",
+            "biker",
+            "premium",
+            "retro",
+            "classic"
+        ],
+        "image_path": "data\\images\\prod_012.jpg"
+    },
+    {
+        "id": "prod_013",
+        "title": "Levi's Sherpa Denim Trucker Jacket",
+        "brand": "Levi's",
+        "category": "Fashion",
+        "price": 4999,
+        "color": "blue",
+        "description": "Classic blue cotton denim trucker jacket lined with warm, cozy faux-sherpa lining. Features snap buttons and chest flap pockets.",
+        "tags": [
+            "jacket",
+            "denim",
+            "sherpa",
+            "casual",
+            "winter",
+            "blue"
+        ],
+        "image_path": "data\\images\\prod_013.jpg"
+    },
+    {
+        "id": "prod_014",
+        "title": "Apple MacBook Pro 14 M3",
+        "brand": "Apple",
+        "category": "Electronics",
+        "price": 169900,
+        "color": "silver",
+        "description": "Powerful silver notebook laptop featuring the Apple M3 chip, 14.2-inch Liquid Retina XDR display, 8GB RAM, and 512GB SSD. Outstanding battery life and speed.",
+        "tags": [
+            "laptop",
+            "apple",
+            "m3",
+            "retina",
+            "silver",
+            "premium"
+        ],
+        "image_path": "data\\images\\prod_014.jpg"
+    },
+    {
+        "id": "prod_015",
+        "title": "Lenovo ThinkPad X1 Carbon Gen 11",
+        "brand": "Lenovo",
+        "category": "Electronics",
+        "price": 144999,
+        "color": "black",
+        "description": "Ultralight black business laptop with carbon-fiber chassis, Intel Core i7, 14-inch anti-glare screen, backlit keyboard, and fingerprint reader.",
+        "tags": [
+            "laptop",
+            "lenovo",
+            "thinkpad",
+            "business",
+            "intel",
+            "lightweight"
+        ],
+        "image_path": "data\\images\\prod_015.jpg"
+    },
+    {
+        "id": "prod_016",
+        "title": "Apple iPhone 15 Pro Max",
+        "brand": "Apple",
+        "category": "Electronics",
+        "price": 139900,
+        "color": "pink",
+        "description": "Flagship Apple smartphone in titanium pink, featuring a 6.7-inch OLED Super Retina XDR display, A17 Pro chip, triple-camera system, and USB-C.",
+        "tags": [
+            "smartphone",
+            "apple",
+            "iphone",
+            "camera",
+            "pink",
+            "oled"
+        ],
+        "image_path": "data\\images\\prod_016.jpg"
+    },
+    {
+        "id": "prod_017",
+        "title": "Samsung Galaxy S24 Ultra",
+        "brand": "Samsung",
+        "category": "Electronics",
+        "price": 119900,
+        "color": "black",
+        "description": "Premium Android smartphone in titanium black, featuring 6.8-inch Dynamic AMOLED 120Hz display, 200MP camera, built-in S-Pen, and Snapdragon 8 Gen 3.",
+        "tags": [
+            "smartphone",
+            "samsung",
+            "android",
+            "spen",
+            "camera",
+            "amoled"
+        ],
+        "image_path": "data\\images\\prod_017.jpg"
+    },
+    {
+        "id": "prod_018",
+        "title": "Sony WH-1000XM5 ANC Headphones",
+        "brand": "Sony",
+        "category": "Electronics",
+        "price": 26990,
+        "color": "black",
+        "description": "Industry-leading black over-ear wireless headphones with dual processor auto-ANC, 30 hours battery life, speak-to-chat, and crystal-clear call quality.",
+        "tags": [
+            "headphones",
+            "anc",
+            "wireless",
+            "sony",
+            "music",
+            "bluetooth"
+        ],
+        "image_path": "data\\images\\prod_018.jpg"
+    },
+    {
+        "id": "prod_019",
+        "title": "Bose QuietComfort Headphones",
+        "brand": "Bose",
+        "category": "Electronics",
+        "price": 22990,
+        "color": "silver",
+        "description": "Legendary noise-cancelling silver headphones with premium hi-fi audio quality, custom sound EQ profiles, and lightweight comfort cushion design.",
+        "tags": [
+            "headphones",
+            "bose",
+            "anc",
+            "comfort",
+            "silver",
+            "wireless"
+        ],
+        "image_path": "data\\images\\prod_019.jpg"
+    },
+    {
+        "id": "prod_020",
+        "title": "Fossil Minimalist Chronograph Watch",
+        "brand": "Fossil",
+        "category": "Accessories",
+        "price": 11995,
+        "color": "silver",
+        "description": "Clean silver-tone analog wristwatch featuring a white dial, sub-dials, quartz movement, mineral glass casing, and stainless steel mesh strap.",
+        "tags": [
+            "watch",
+            "fossil",
+            "analog",
+            "quartz",
+            "chronograph",
+            "silver"
+        ],
+        "image_path": "data\\images\\prod_020.jpg"
+    },
+    {
+        "id": "prod_021",
+        "title": "Seiko 5 Sports Automatic Watch",
+        "brand": "Seiko",
+        "category": "Accessories",
+        "price": 24500,
+        "color": "black",
+        "description": "Sleek black automatic mechanical wristwatch with stainless steel case, unidirectional rotating bezel, day/date display, and 100m water resistance.",
+        "tags": [
+            "watch",
+            "seiko",
+            "automatic",
+            "mechanical",
+            "waterproof",
+            "black"
+        ],
+        "image_path": "data\\images\\prod_021.jpg"
+    },
+    {
+        "id": "prod_022",
+        "title": "Ray-Ban Classic Wayfarer Sunglasses",
+        "brand": "Ray-Ban",
+        "category": "Accessories",
+        "price": 9990,
+        "color": "gold",
+        "description": "Timeless G-15 green polarized lenses with gold-trimmed acetate frames. Features UV protection coating and comfortable nose grips.",
+        "tags": [
+            "sunglasses",
+            "rayban",
+            "classic",
+            "polarized",
+            "uv",
+            "vintage"
+        ],
+        "image_path": "data\\images\\prod_022.jpg"
+    },
+    {
+        "id": "prod_023",
+        "title": "Oakley Polarized Sport Sunglasses",
+        "brand": "Oakley",
+        "category": "Accessories",
+        "price": 12990,
+        "color": "black",
+        "description": "Robust black matte sport sunglasses with polarized Prizm Road lenses, lightweight frame, and rubber temple guards for anti-slip grip.",
+        "tags": [
+            "sunglasses",
+            "sport",
+            "polarized",
+            "oakley",
+            "cycling",
+            "run"
+        ],
+        "image_path": "data\\images\\prod_023.jpg"
+    },
+    {
+        "id": "prod_024",
+        "title": "Saddleback Saddleback Leather Bifold",
+        "brand": "Saddleback",
+        "category": "Accessories",
+        "price": 4500,
+        "color": "brown",
+        "description": "Thick full-grain brown leather bifold wallet with RFID shielding, four card slots, and cash sleeve. Extremely durable with reinforced stitching.",
+        "tags": [
+            "wallet",
+            "leather",
+            "bifold",
+            "rfid",
+            "brown",
+            "durable"
+        ],
+        "image_path": "data\\images\\prod_024.jpg"
+    },
+    {
+        "id": "prod_025",
+        "title": "Bellroy Slim Sleeve Leather Wallet",
+        "brand": "Bellroy",
+        "category": "Accessories",
+        "price": 5990,
+        "color": "black",
+        "description": "Slim bifold black leather wallet with quick-access slots for active cards, a pull-tab section for less-used cards, and folded bill sleeve.",
+        "tags": [
+            "wallet",
+            "leather",
+            "slim",
+            "bellroy",
+            "minimalist",
+            "black"
+        ],
+        "image_path": "data\\images\\prod_025.jpg"
+    }
+]
