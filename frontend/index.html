@@ -40,6 +40,18 @@
                         <i class="fa-solid fa-chart-line"></i> Analytics & Model Playground
                     </button>
                 </nav>
+
+                <!-- API Connection Settings -->
+                <div class="api-settings-container">
+                    <div class="api-status-wrapper">
+                        <span class="status-dot disconnected" id="api-status-dot"></span>
+                        <span class="status-text" id="api-status-text">Disconnected</span>
+                    </div>
+                    <div class="api-input-wrapper">
+                        <i class="fa-solid fa-server" title="Backend API Server URL"></i>
+                        <input type="text" id="api-url-input" placeholder="API Server URL" title="Set backend API Server URL (e.g., http://localhost:8000)">
+                    </div>
+                </div>
             </div>
         </header>
 

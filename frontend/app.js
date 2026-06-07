@@ -1,5 +1,18 @@
 // --- Constants & Global State ---
-const API_URL = ""; // Served on the same host/port
+let API_URL = localStorage.getItem("API_URL") || "";
+
+// If API_URL is empty, determine sensible defaults:
+if (!API_URL) {
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+        if (window.location.port !== "8000") {
+            API_URL = "http://localhost:8000";
+        } else {
+            API_URL = ""; // Served on the same port
+        }
+    } else {
+        API_URL = "http://localhost:8000";
+    }
+}
 
 let activeTab = 'search';
 let uploadedFile = null;
@@ -943,9 +956,62 @@ function renderDummyCharts() {
     renderAccuracyChart(accHistory);
 }
 
+// --- Connection Verification and Settings ---
+async function checkAPIConnection() {
+    const dot = document.getElementById('api-status-dot');
+    const text = document.getElementById('api-status-text');
+    const input = document.getElementById('api-url-input');
+    
+    if (input && document.activeElement !== input) {
+        input.value = API_URL;
+    }
+    
+    try {
+        const response = await fetch(`${API_URL}/api/catalog`, { method: 'GET' });
+        if (response.ok) {
+            dot.className = 'status-dot connected';
+            text.innerText = 'Connected';
+            return true;
+        }
+    } catch (e) {
+        // Fallback checks
+    }
+    dot.className = 'status-dot disconnected';
+    text.innerText = 'Disconnected';
+    return false;
+}
+
 // --- Startup Initialization ---
 window.onload = function() {
     fetchCatalog();
     updateWeightDisplay(0.5);
     updateMultimodalDisplay(0.5);
+    
+    // Initialize API input event listener
+    const apiInput = document.getElementById('api-url-input');
+    if (apiInput) {
+        apiInput.value = API_URL;
+        apiInput.addEventListener('change', (e) => {
+            let val = e.target.value.trim();
+            // Remove trailing slash if present
+            if (val.endsWith('/')) {
+                val = val.slice(0, -1);
+            }
+            API_URL = val;
+            localStorage.setItem("API_URL", API_URL);
+            showNotification(`API Server URL updated: ${API_URL || "same host/port"}`, "info");
+            checkAPIConnection();
+            
+            // Re-fetch data using new url
+            fetchCatalog();
+            if (activeTab === 'analytics') {
+                fetchMetrics();
+                loadEmbeddingViz(currentVizMethod);
+            }
+        });
+    }
+    
+    // Start periodic connection checking
+    checkAPIConnection();
+    setInterval(checkAPIConnection, 10000);
 };
