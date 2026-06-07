@@ -25,7 +25,7 @@ def elevate_to_venv():
 elevate_to_venv()
 
 # Now we can safely import project modules
-import uvicorn
+import uvicorn  # type: ignore
 from src.model.dataset import generate_synthetic_catalog
 from src.search.indexer import build_vector_index
 

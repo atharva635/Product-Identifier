@@ -13,13 +13,15 @@ def calculate_metrics(logits_per_image, logits_per_text):
     batch_size = logits_per_image.shape[0]
     targets = torch.arange(batch_size, dtype=torch.long, device=logits_per_image.device)
     
+    k = min(5, batch_size)
+    
     # Image-to-Text retrieval accuracy
-    _, i2t_preds = logits_per_image.topk(5, dim=-1)
+    _, i2t_preds = logits_per_image.topk(k, dim=-1)
     i2t_acc1 = (i2t_preds[:, 0] == targets).float().mean().item()
     i2t_acc5 = (i2t_preds == targets.unsqueeze(-1)).any(dim=-1).float().mean().item()
     
     # Text-to-Image retrieval accuracy
-    _, t2i_preds = logits_per_text.topk(5, dim=-1)
+    _, t2i_preds = logits_per_text.topk(k, dim=-1)
     t2i_acc1 = (t2i_preds[:, 0] == targets).float().mean().item()
     t2i_acc5 = (t2i_preds == targets.unsqueeze(-1)).any(dim=-1).float().mean().item()
     
