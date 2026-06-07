@@ -2,7 +2,7 @@ import os
 import sys
 import argparse
 # pyrefly: ignore [missing-import]
-import uvicorn
+
 
 # --- Virtual Environment Self-Elevation ---
 # If this script is run with the system Python, automatically restart it using the virtual environment Python.
@@ -25,6 +25,7 @@ def elevate_to_venv():
 elevate_to_venv()
 
 # Now we can safely import project modules
+import uvicorn
 from src.model.dataset import generate_synthetic_catalog
 from src.search.indexer import build_vector_index
 
